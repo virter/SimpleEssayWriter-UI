@@ -1,0 +1,1495 @@
+/* START reset */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 300px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 87%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: .35em .75em .625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    padding: 0;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+summary {
+    display: list-item;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main,
+details {
+    display: block;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+template,
+[hidden] {
+    display: none;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent
+}
+/* END reset */
+
+body {
+  font-family: Arial, Helvetica;
+  font-weight: 400;
+  color: #1A1C26;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.-frogtool-modal img {
+    width: auto;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.-frogtool-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: unset;
+    position: relative;
+    text-decoration: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    min-height: 24px;
+    transition: .2s;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.-frogtool-btn:active, 
+.-frogtool-btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.-frogtool-btn--reset {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    min-height: 1px;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.-frogtool-btn--green {
+    color: #fff;
+    background: #1ADE64;
+}
+
+.-frogtool-btn--green:hover {
+    color: #fff;
+    background: #04fb61;
+}
+
+.-frogtool-btn--green:active {
+    color: #fff;
+    background: #446b11;
+}
+
+.-frogtool-btn--blue {
+    color: #fff;
+    background: #6463FF;
+}
+
+.-frogtool-btn--blue:hover,
+.-frogtool-btn--blue:active {
+    color: #fff;
+    background: #3635c9;
+}
+
+.-frogtool-btn--cross:after,
+.-frogtool-btn--login:after,
+.-frogtool-btn--copy:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.-frogtool-btn--cross:after {
+    background-image: url('../img/icons/cross.svg');
+}
+
+.-frogtool-btn--login:after {
+    background-image: url('../img/icons/login.svg');
+    margin-left: 6px;
+}
+
+.-frogtool-btn--copy:after {
+    background-image: url('../img/icons/copy.svg');
+    margin-left: 6px;
+}
+
+/* START forms */
+.-frogtool-form {
+
+}
+
+.-frogtool-form__success {
+    color: #1A1C26;
+    padding: 12px 16px;
+    background: #E1FFED;
+    border: 1px solid #BDFFC0;
+    border-radius: 6px;
+    text-align: center;
+    margin: 0 0 16px;
+    display: none;
+}
+
+.-frogtool-form__success.is-show {
+    display: block;
+}
+
+.-frogtool-form__desc {
+    margin: 0 0 16px;
+}
+
+.-frogtool-form__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 0;
+}
+
+.-frogtool-form__footer > * {
+    margin: 16px 0 0;
+}
+
+.-frogtool-form__footer > *:first-child {
+    margin: 0;
+}
+
+.-frogtool-form__send {
+    padding: 0 16px;
+    min-height: 32px;
+}
+
+.-frogtool-input {
+    margin: 0 0 16px;
+}
+
+.-frogtool-input__label {
+    font-weight: 500;
+    margin: 0 0 4px;
+    display: block;
+}
+
+.-frogtool-input__error {
+    color: #FF0000;
+    margin: 4px 0 0;
+}
+
+.-frogtool-input__elem {
+    background: #fff;
+    border: 1px solid #C7E1FF;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    min-height: 28px;
+    padding: 0 10px;
+    resize: none;
+}
+
+.-frogtool-input__elem.invalid ~ .-frogtool-input__error {
+    display: block;
+}
+
+textarea.-frogtool-input__elem {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* END forms*/
+
+/* START rating*/
+.-frogtool-rating { 
+    padding: 0;
+    margin: 16px 0 0;
+    border: none;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.-frogtool-rating__input{ 
+    display: none;
+}
+
+.-frogtool-rating__input-label {
+    content: '';
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    display: inline-flex;
+    cursor: pointer;
+
+    background-image: url('../img/icons/rating-star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 4px;
+}
+
+.-frogtool-rating__input-label {
+    margin: 0;
+}
+
+.-frogtool-rating > .-frogtool-rating__input:checked ~ .-frogtool-rating__input-label, 
+.-frogtool-rating:not(:checked) > .-frogtool-rating__input-label:hover, 
+.-frogtool-rating:not(:checked) > label:hover ~ label { 
+    background-image: url('../img/icons/rating-star-checked.svg');
+} 
+
+.-frogtool-rating > input:checked + label:hover, 
+.-frogtool-rating > input:checked ~ label:hover,
+.-frogtool-rating > label:hover ~ input:checked ~ label, 
+.-frogtool-rating > input:checked ~ label:hover ~ label { 
+    background-image: url('../img/icons/rating-star-checked.svg');
+}
+
+.-frogtool-form-rating__footer {
+    display: none;
+}
+
+.-frogtool-form-rating__footer .-frogtool-btn {
+    display: none;
+    margin: 0;
+}
+
+.-frogtool-form-rating__footer .-frogtool-btn.is-show {
+    display: flex;
+}
+
+/* END rating */
+
+
+.-frogtool-modal {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #222;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.-frogtool-modal--open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s 0s;
+}
+
+.-frogtool-modal.-frogtool-modal--open {
+    position: relative;
+}
+
+.-frogtool-modal__square {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 8px;
+    /*box-shadow: 0px 4px 16px #D5DCFF;*/
+}
+
+.-frogtool-modal__head {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 36px;
+    background: #F9FAFF;
+    border-bottom: 1px solid #EEF1FF;
+    border-radius: 8px 8px 0 0;
+}
+
+.-frogtool-modal__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.1;
+    display: inline-flex;
+    align-items: center;
+}
+
+.-frogtool-modal__title-icon {
+    margin-right: 8px;
+    max-width: 16px;
+}
+
+.-frogtool-modal__content {
+    background: #fff;
+    padding: 15px;
+}
+
+.-frogtool-modal__introduce {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #E1FFED;
+    background-image: url('../img/icons/frog-introduce.svg');
+    background-position: calc(50% + 80px) center;
+    background-size: 97px auto;
+    background-repeat: no-repeat;
+    border: 1px solid #BDFFC0;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__introduce.hidden {
+    display: none;
+}
+
+.-frogtool-modal__introduce-content {
+    width: calc(100% - 90px);
+}
+
+.-frogtool-modal__introduce-title {
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.-frogtool-modal__introduce-list {
+
+}
+
+.-frogtool-modal__introduce-item {
+    position: relative;
+    margin: 0 0 6px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.1;
+    padding-left: 12px;
+}
+
+.-frogtool-modal__introduce-item::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    background: url('../img/icons/list-check.svg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.-frogtool-modal__welcome {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(255, 247, 219, 1);
+    border: 1px solid rgba(255, 235, 203, 1);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__welcome.hidden {
+    display: none;
+}
+
+.-frogtool-modal__welcome .welcome-header {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.-frogtool-modal__welcome .welcome-content {
+    margin-top: 10px;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.-frogtool-modal__editor-btn-wrap {
+    margin-top: 10px;
+}
+
+.-frogtool-modal__editor-btn-wrap.hidden {
+    display: none;
+}
+
+.-frogtool-modal__editor-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6463FF;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.-frogtool-modal__editor-btn:hover {
+    background-color: #3635C9;
+}
+
+.-frogtool-modal__upgrade {
+    background: #E1FFED;
+    border: 1px solid #BDFFC0;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__upgrade-title {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__upgrade-list {
+
+}
+
+.-frogtool-modal__upgrade-item {
+    position: relative;
+    margin: 0 0 6px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.1;
+    padding-left: 12px;
+}
+
+.-frogtool-modal__upgrade-item::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    background: url('../img/icons/list-check.svg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.-frogtool-modal__upgrade-item:last-child {
+    margin: 0;
+}
+
+.-frogtool-modal__upgrade-btns {
+    margin: 16px 0 0;
+}
+
+.-frogtool-modal__warning {
+    position: relative;
+    background: #FFF3DE;
+    border: 1px solid #FFD694;
+    border-radius: 6px;
+    margin: 16px 0;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.-frogtool-modal__warning-title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.-frogtool-modal__warning-title:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    background: url('../img/icons/warning.svg') no-repeat center / contain;
+    margin-right: 6px;
+}
+
+.-frogtool-modal__warning-desc {
+    font-weight: 700;
+}
+
+.-frogtool-modal__nav {
+    margin: 16px 0;
+    margin-bottom: 0;
+}
+
+.-frogtool-modal__nav .-frogtool-input {
+    margin: 0;
+}
+
+.-frogtool-modal__nav-item {
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEF1FF
+}
+
+.-frogtool-modal__nav-item-label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.-frogtool-modal__nav-item-label:hover .-frogtool-modal__nav-item-title {
+    color: #2BB3FF;
+}
+
+.open-dialog-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(63, 62, 237, 1);
+    width: 100%;
+    font-size: 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.open-dialog-btn:hover {
+    background-color: rgba(100, 99, 255, 1)
+}
+
+.sign-in-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(63, 62, 237, 1);
+    font-size: 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sign-in-btn:hover {
+    background-color: rgba(100, 99, 255, 1)
+}
+
+.sign-in-btn svg {
+    margin-left: 4px;
+}
+
+.-frogtool-modal__nav-item-title {
+    color: #1A1C26;
+    display: inline-flex;
+    align-items: center;
+    transition: .2s;
+}
+
+.-frogtool-modal__nav-icons {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.-frogtool-modal__btns {
+    margin: 16px 0 0;
+}
+
+.-frogtool-modal__footer { 
+    padding: 16px;
+    background: #F9FAFF;
+    border-top: 1px solid #EEF1FF;
+    border-radius: 0 0 8px 8px;
+}
+
+.-frogtool-modal__footer .-frogtool-dropdown--light {
+    margin: -6px 0;
+}
+
+.-frogtool-modal__share {
+    padding: 16px 0;
+    text-align: center;
+}
+
+.-frogtool-modal__share-img {
+    margin: 0 auto 16px;
+}
+
+.-frogtool-modal__share-title {
+    color: #2F374C;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__share-desc {
+    color: #2F374C;
+    margin: 16px 0 0;
+}
+
+.-frogtool-modal__share-copylink {
+    color: #0D6FFB;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+
+    background: #fff;
+    box-shadow: 0px 4px 16px #E6EAFF;
+    border-radius: 8px;
+    display: block;
+    margin: 16px 0;
+    padding: 12px 10px;
+    width: 100%;
+}
+
+.-frogtool-modal__share-btns {
+    margin: 16px 0 0;
+}
+
+.-frogtool-dropdown {
+    max-width: 343px;
+    position: relative;
+}
+
+.-frogtool-dropdown--light {
+    display: inline-block;
+}
+
+.-frogtool-dropdown--light .-frogtool-dropdown__btn {
+    background: transparent;
+    padding: 0;
+}
+
+.-frogtool-dropdown--light .-frogtool-dropdown__list {
+    left: 0;
+    right: auto;
+}
+
+.-frogtool-dropdown__btn {
+    color: #1A1C26;
+    background: #EEF1FF;
+    border-radius: 4px;
+    min-height: 28px;
+    padding: 0 6px;
+}
+
+.-frogtool-dropdown__btn::after {
+    content: "";
+    background: url('../img/icons/chevron-down.svg') no-repeat center / contain;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+}
+
+.-frogtool-dropdown__btn--active::after {
+    transform: rotate(-180deg);
+}
+
+.-frogtool-dropdown__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 60px);
+    overflow: hidden;
+    width: 180px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease;
+    background: #fff;
+
+    box-shadow: 0px 4px 16px #D5DCFF;
+    border-radius: 8px;
+
+    overflow-y: auto;
+    max-height: 115px;
+}
+.-frogtool-dropdown__list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #EEF1FF
+}
+
+.-frogtool-dropdown__list::-webkit-scrollbar-thumb {
+    background-color: #6463FF;
+    border-radius: 5px;
+}
+
+.-frogtool-dropdown__list--visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.-frogtool-dropdown__list-item {
+    margin: 0;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #1A1C26;
+    transition: .2s ease;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.-frogtool-dropdown__list-item span:not([class]) {
+    display: none;
+}
+
+.-frogtool-dropdown__list-item--active {
+    background: #EEF1FF;
+}
+
+.-frogtool-dropdown__list-item:hover {
+    background: #EEF1FF;
+}
+
+.-frogtool-dropdown__country {
+    margin: 0 6px 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.-frogtool-dropdown__country svg {
+    width: 26px;
+    height: auto;
+}
+
+.-frogtool-dropdown__input {
+    display: none;
+}
+
+/* START стили для работы с текстом */
+
+.frogtool-modal__btn {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: unset;
+    position: relative;
+    text-decoration: none;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    min-height: 24px;
+    transition: .2s;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.frogtool-modal__btn:active, 
+.frogtool-modal__btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.frogtool-modal__btn--reset {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    min-height: 1px;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.frogtool-modal__btn--green {
+    color: #fff;
+    background: #1ADE64;
+}
+
+.frogtool-modal__btn--green:hover {
+    color: #fff;
+    background: #04fb61;
+}
+
+.frogtool-modal__btn--green:active {
+    color: #fff;
+    background: #446b11;
+}
+
+.frogtool-modal__btn--edit {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    box-shadow: 0px 4px 16px #B5C1FF;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.frogtool-modal__btn--cross:after,
+.frogtool-modal__btn--trash:after,
+.frogtool-modal__btn--bookmark:after,
+.frogtool-modal__btn--confirm:after,
+.frogtool-modal__btn--blocked:after,
+.frogtool-modal__btn--edit:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.frogtool-modal__btn--cross:after {
+    background-image: url('../img/icons/cross.svg');
+}
+
+.frogtool-modal__btn--trash:after {
+    background-image: url('../img/icons/trash.svg');
+}
+
+.frogtool-modal__btn--bookmark:after {
+    background-image: url('../img/icons/bookmark.svg');
+}
+
+.frogtool-modal__btn--confirm:after {
+    background-image: url('../img/icons/confirm.svg');
+}
+
+.frogtool-modal__btn--blocked:after {
+    background-image: url('../img/icons/blocked.svg');
+}
+
+.frogtool-modal__btn--edit:after {
+    background-image: url('../img/icons/textarea-edit.svg');
+}
+
+.frogtool-modal__icons {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin: 0 6px 0 0;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.frogtool-modal__icons--warning {
+    background-image: url('../img/icons/warning.svg');
+}
+
+.frogtool-modal__icons--success {
+    background-image: url('../img/icons/success.svg');
+}
+
+.frogtool-modal__icons--rewrite {
+    background-image: url('../img/icons/rewrite.svg');
+}
+
+.frogtool-modal__icons--shorter {
+    background-image: url('../img/icons/emoji/shorter.svg');
+}
+
+.frogtool-modal__icons--longer {
+    background-image: url('../img/icons/emoji/longer.svg');
+}
+
+.frogtool-modal__icons--friendly {
+    background-image: url('../img/icons/emoji/friendly.svg');
+}
+
+.frogtool-modal__icons--formal {
+    background-image: url('../img/icons/emoji/formal.svg');
+}
+
+.frogtool-modal__icons--casual {
+    background-image: url('../img/icons/emoji/casual.svg');
+}
+
+.frogtool-modal__icons--locked {
+    background-image: url('../img/icons/emoji/locked.svg');
+}
+
+.frogtool-modal {
+    font-family: Arial, Helvetica;
+    font-weight: 400;
+    color: #1A1C26;
+    font-size: 12px;
+    line-height: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.frogtool-modal.-frogtool-modal--open {
+    display: block;
+}
+
+.-frogtool-modal.-frogtool-modal--fadeIn .frogtool-modal__square {
+    opacity: 1;
+}
+
+.frogtool-modal__square {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px #D5DCFF;
+    opacity: 0;
+    transition: .3s;
+}
+
+.frogtool-modal__square--wide {
+    width: 550px;
+    min-width: 550px;
+}
+
+.frogtool-modal__head {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 36px;
+    background: #F9FAFF;
+    border-bottom: 1px solid #EEF1FF;
+    border-radius: 8px 8px 0 0;
+}
+
+.frogtool-modal__title {
+    color: #1A1C26;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+    display: inline-flex;
+    align-items: center;
+}
+
+.frogtool-modal__title-icon {
+    margin-right: 8px;
+    max-width: 16px;
+}
+
+.frogtool-modal__content {
+    background: #fff;
+    padding: 16px;
+}
+
+.frogtool-words__item {
+    display: block;
+    margin: 0 6px 6px 0;
+}
+
+.frogtool-words__item:last-child {
+    margin-bottom: 0;
+}
+
+.frogtool-words__item-title {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+    display: inline-block;
+    background: #2BB3FF;
+    padding: 4px 8px;
+    min-height: 24px;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+
+.-frogtool-modal__nav-item-level {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.-frogtool-modal__nav-item-level .-frogtool-modal__nav-item-title {
+    font-family: Arial, Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.-frogtool-modal__nav-item-radio_row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.frogtool-words__item-title:hover {
+    color: #fff;
+    background: #54befa;
+}
+
+.frogtool-words__item-title:active {
+    color: #fff;
+    background: #0a7fc1;
+}
+
+.frogtool__tabs-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EEF1FF;
+    margin: -16px -16px 16px -16px;
+}
+
+.frogtool__tabs-nav-item:hover .frogtool__tabs-nav-btn {
+    border-bottom-color: #aadbf7;
+}
+
+.frogtool__tabs-nav-item--locked .frogtool__tabs-nav-btn {
+    color: #B8C3C9;
+}
+
+.frogtool__tabs-nav-item--active .frogtool__tabs-nav-btn,
+.frogtool__tabs-nav-item--active:hover .frogtool__tabs-nav-btn {
+    border-bottom-color: #2BB3FF;
+}
+
+.frogtool__tabs-nav-btn {
+    color: #1A1C26;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.1;
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.frogtool__tabs-section {
+    display: none;
+}
+
+.frogtool__tabs-section--active {
+    display: block;
+}
+
+.frogtool__rewrite-text {
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.frogtool__rewrite-text span {
+    color: #FF9E00;
+}
+
+.frogtool-modal__upgrade {
+    position: relative;
+    background: #E1FFED;
+    border: 1px solid #BDFFC0;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.frogtool-modal__upgrade-title {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.frogtool-modal__upgrade-item {
+    position: relative;
+    margin: 0 0 6px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.1;
+    padding-left: 12px;
+}
+
+.frogtool-modal__upgrade-item::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    background: url('../img/icons/list-check.svg') no-repeat center / contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frogtool-modal__upgrade-item:last-child {
+    margin: 0;
+}
+
+.frogtool-modal__upgrade-btns {
+    margin: 16px 0 0;
+}
+
+.frogtool-modal__upgrade:after {
+    content: '';
+    background: url('../img/icons/upgrade-frog.svg') no-repeat center / contain;
+    width: 110px;
+    height: 117px;
+    position: absolute;
+    top: 50%;
+    right: 130px;
+    transform: translateY(-50%);
+}
+
+.frogtool-modal__footer { 
+    padding: 10px 16px;
+    background: #F9FAFF;
+    border-top: 1px solid #EEF1FF;
+    border-radius: 0 0 8px 8px;
+}
+
+.frogtool-modal__footer > * {
+    margin: 0 6px 0 0;
+}
+
+.frogtool-modal__footer:last-child {
+    margin: 0;
+}
+
+.-frogtool-input__switch {
+	display: none;
+}
+
+.-frogtool-input__switch-label {
+	cursor: pointer;
+	width: 36px;
+	height: 16px;
+	background: #596376;
+	display: block;
+	border-radius: 20px;
+	position: relative;
+}
+
+.-frogtool-input__switch-label:before {
+    content: 'OFF';
+    color: #fff;
+    font-weight: 500;
+    font-size: 9px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+}
+
+.-frogtool-input__switch-label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.-frogtool-input__switch:checked + .-frogtool-input__switch-label {
+	background: #6463FF;
+}
+
+.-frogtool-input__switch:checked + .-frogtool-input__switch-label:before {
+    content: 'ON';
+    right: auto;
+    left: 6px;
+}
+
+.-frogtool-input__switch:checked + .-frogtool-input__switch-label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.-frogtool-input__switch-label:active:after {
+	width: 130px;
+}
+/* END стили для работы с текстом */
+
+
+.-frogtool-modal__notice {
+    display: none;
+    background: #FFF1E6;
+    border: 1px solid #FFD7D7;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+.-frogtool-modal__notice.visible {
+    display: block;
+}
+
+.-frogtool-modal__notice-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.-frogtool-modal__notice-content {
+    margin: 0 0 6px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.1
+}
+
+.-frogtool-modal__editor-btn-small-wrap {
+    margin-top: 10px;
+}
+
+.-frogtool-modal__editor-btn-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6463FF;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.-frogtool-modal__editor-btn-small:hover {
+    background-color: #3635C9;
+}
+
+.-frogtool-modal_rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.-frogtool-modal_rate-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.-frogtool-modal_rate-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.-frogtool-modal_rate-controls-star {
+    width: 24px;
+    height: 24px;
+
+    display: block;
+    cursor: pointer;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    background-image: url('../img/icons/rate-star.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    user-select: none;
+}
+
+.-frogtool-modal_rate-controls-star.active,
+.-frogtool-modal_rate-controls-star.hover {
+    background-image: url('../img/icons/rate-star-active.svg');
+}
+
+.-frogtool-modal_rate-controls-star.unhover {
+    background-image: url('../img/icons/rate-star.svg');
+}
+
+.-frogtool-main-modal {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s 0s;
+}
+
+.-frogtool-main-modal.hidden {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.-frogtool-modal__nav-item.hidden {
+    display: none;
+}

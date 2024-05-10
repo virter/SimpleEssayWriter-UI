@@ -1,0 +1,267 @@
+{
+    "appName": {
+        "message": "Simple Essay Writer"
+    },
+    "appDesc": {
+        "message": "Simple Essay description"
+    },
+    "extension_modal_title": {
+        "message": "Simple Essay Writer"
+    },
+    "unsupported_site_title": {
+        "message": "This Website Not Supported by the Extension"
+    },
+    "unsupported_site_content": {
+        "message": "We are working on expanding the list of supported websites for inline checking. For now, you can use our free editor and check your text in a new tab"
+    },
+    "introduce_our_free_plan": {
+        "message": "We are pleased to introduce our Free Plan"
+    },
+    "all_functional_features": {
+        "message": "All functional features"
+    },
+    "up_to_1000_requests": {
+        "message": "Up to 1000 requests per day"
+    },
+    "powered_with_chatgpt": {
+        "message": "Powered with ChatGPT"
+    },
+    "open_editor_btn": {
+        "message": "Open editor in a new tab"
+    },
+    "context_open_dialog_btn": {
+        "message": "Simple Writer"
+    },
+    "popup_open_dialog_btn": {
+        "message": "Open Grammar Checker"
+    },
+    "enable_switch_label": {
+        "message": "Enable this plugin"
+    },
+    "lang_list_label": {
+        "message": "Language"
+    },
+    "feedback_btn": {
+        "message": "Leave a feedback"
+    },
+    "visit_btn": {
+        "message": "Visit website"
+    },
+    "rate_block_title": {
+        "message": "Ready to give us a 5-star rating?"
+    },
+
+    "status_tip_local_limit": {
+        "message": "Text Limit Exceeded"
+    },
+    "status_notice_title_local_limit": {
+        "message": "Exceeded Text Input Limit"
+    },
+    "status_notice_text_local_limit": {
+        "message": "Sorry, but you've exceeded the maximum character limit for text input. Please shorten your text."
+    },
+    "status_tip_unsupported_site": {
+        "message": "Website Not Supported"
+    },
+    "status_notice_title_unsupported_site": {
+        "message": "Website Not Supported by the Extension"
+    },
+    "status_notice_text_unsupported_site": {
+        "message": "Unfortunately, this website is not compatible with our extension."
+    },
+    "status_tip_plugin_disabled": {
+        "message": "Plugin Disabled"
+    },
+    "status_notice_title_plugin_disabled": {
+        "message": "Plugin Is Disabled"
+    },
+    "status_notice_text_plugin_disabled": {
+        "message": "The plugin is currently disabled. Please enable it to continue."
+    },
+    "status_tip_no_backend_answer": {
+        "message": "No Server Response"
+    },
+    "status_notice_title_backend_answer": {
+        "message": "No Response from Server"
+    },
+    "status_notice_text_backend_answer": {
+        "message": "We're sorry, but we couldn't receive a response from the server. Please check your internet connection or try again later."
+    },
+    "status_tip_unsupported_language": {
+        "message": "Unsupported Language"
+    },
+    "status_notice_title_unsupported_language": {
+        "message": "Unsupported Language Detected"
+    },
+    "status_notice_text_unsupported_language": {
+        "message": "We don't support the language in which the text is entered. Please enter text in a supported language."
+    },
+    "status_tip_daily_limit_reached": {
+        "message": "Daily Limit Exhausted"
+    },
+    "status_notice_title_daily_limit_reached": {
+        "message": "Daily Limit Exhausted on Current Plan"
+    },
+    "status_notice_text_daily_limit_reached": {
+        "message": "You've reached the daily limit allowed on your current plan. Consider upgrading or wait until your limit resets."
+    },
+    "status_tip_monthly_limit_reached": {
+        "message": "Monthly Limit Exhausted"
+    },
+    "status_notice_title_monthly_limit_reached": {
+        "message": "Monthly Limit Exhausted on Current Plan"
+    },
+    "status_notice_text_monthly_limit_reached": {
+        "message": "Your usage has exceeded the monthly limit on your current plan. Please upgrade or wait for the monthly reset."
+    },
+    "status_tip_overall_limit_reached": {
+        "message": "Overall Limit Exceeded"
+    },
+    "status_notice_title_overall_limit_reached": {
+        "message": "Overall Limit Exceeded"
+    },
+    "status_notice_text_overall_limit_reached": {
+        "message": "The extension has exceeded the overall usage limit. We apologize for the inconvenience. Please try again later"
+    },
+    "status_tip_not_required_version": {
+        "message": "Outdated Plugin Version"
+    },
+    "status_notice_title_not_required_version": {
+        "message": "Plugin Version is Outdated"
+    },
+    "status_notice_text_not_required_version": {
+        "message": "The installed plugin version is too old. Please update to the latest version for optimal performance."
+    },
+    "status_tip_user_disabled": {
+        "message": "User Blocked"
+    },
+    "status_notice_title_user_disabled": {
+        "message": "User Blocked"
+    },
+    "status_notice_text_user_disabled": {
+        "message": "Sorry, but your account has been blocked. Please contact support for further assistance."
+    },
+    "status_tip_min_text_limit": {
+        "message": "Text is too Short"
+    },
+    "status_notice_title_min_text_limit": {
+        "message": "Your Text is too Short for Checking"
+    },
+    "status_notice_text_min_text_limit": {
+        "message": "Oops! Your text is too short for checking. Please provide a longer text."
+    },
+    "status_tip_max_text_limit": {
+        "message": "Text is too Long"
+    },
+    "status_notice_title_max_text_limit": {
+        "message": "Your Text is too Long for Checking"
+    },
+    "status_notice_text_max_text_limit": {
+        "message": "Sorry, but you've exceeded the maximum character limit for text input. Please shorten your text."
+    },
+
+    "welcome_header": {
+        "message": "Welcome!"
+    },
+    "welcome_content": {
+        "message": "You are signed as"
+    },
+
+    "dialog_title": {
+        "message": "Simple Essay Writer"
+    },
+    "subject": {
+        "message": "Essay subject"
+    },
+    "subject_placeholder": {
+        "message": "Subject"
+    },
+    "description": {
+        "message": "Description"
+    },
+    "description_placeholder": {
+        "message": "Description"
+    },
+    "level": {
+        "message": "Level"
+    },
+    "level_placeholder": {
+        "message": "Level"
+    },
+    "essay_style": {
+        "message": "Essay style"
+    },
+    "essay_style_placeholder": {
+        "message": "Essay style"
+    },
+    "ref_style": {
+        "message": "Reference style"
+    },
+    "ref_style_placeholder": {
+        "message": "Reference style"
+    },
+    "what_you_need": {
+        "message": "Enter what you need to write"
+    },
+    "command_tip1": {
+        "message": "Enter a command like:"
+    },
+    "command_tip2": {
+        "message": "Write an email that I’m looking for a job opportunity"
+    },
+    "command_tip3": {
+        "message": "Write a reply to this email about salary negotiation"
+    },
+    "command_tip4": {
+        "message": "Fix grammar and improve writing"
+    },
+    "command_tip5": {
+        "message": "Translate to english"
+    },
+    "what_you_need_placeholder": {
+        "message": "Write new email"
+    },
+    "tone": {
+        "message": "Tone"
+    },
+    "text_language": {
+        "message": "Language"
+    },
+    "optional": {
+        "message": "optional"
+    },
+    "language": {
+        "message": "Language"
+    },
+    "past_text_here": {
+        "message": "Past the text here"
+    },
+    "up_to_5000_symbols": {
+        "message": "up to 5000 symbols"
+    },
+    "your_text": {
+        "message": "Your text"
+    },
+    "generate_text": {
+        "message": "Generate text"
+    },
+    "ai_result": {
+        "message": "AI result"
+    },
+    "like_extension": {
+        "message": "Like the extension? Please, support us by rating on Chrome WebStore"
+    },
+    "copy_text": {
+        "message": "Copy text"
+    },
+    "text_coppied": {
+        "message": "Text coppied"
+    },
+    "highlight_changes": {
+        "message": "Highlight changes"
+    },
+
+    "no_mistakes_message": {
+        "message": "There is no mistakes"
+    }
+}
