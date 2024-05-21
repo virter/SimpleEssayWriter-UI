@@ -1,12 +1,10 @@
 //post-process:import:./vendors/webcomponents-bundle.js
 //post-process:import:./vendors/pusher.min.js
-//post-process:import:./services/PusherService.js
 //post-process:import:./functions/createElement.js
 //post-process:import:./functions/getUuid.js
 //post-process:import:./functions/getUrl.js
 //post-process:import:./components/DialogComponent.js
 //post-process:import:./controllers/PositionController.js
-//post-process:import:./common/ResponseQueue.js
 //post-process:import:./common/RateBlock.js
 //post-process:import:./common/SearchDropdown.js
 //post-process:import:./services/RequestService.js
@@ -50,7 +48,6 @@ async function load() {
     window.gcc.user.id = await window.gcc.services.userService.getId();
 
     window.gcc.services.analyticsService = new AnalyticsService();
-    window.gcc.services.pusherService = new PusherService(window.gcc.user.id);
     window.gcc.services.requestService = new RequestService(window.gcc.user.id);
     window.gcc.services.responseService = new ResponseService();
     window.gcc.services.textCompareService = new TextCompareService();
@@ -95,7 +92,6 @@ function disable() {
     window.gcc.user.id = null;
 
     window.gcc.services.analyticsService = null;
-    window.gcc.services.pusherService = null;
     window.gcc.services.requestService = null;
     window.gcc.services.responseService = null;
     window.gcc.services.textCompareService = null;
