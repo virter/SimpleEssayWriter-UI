@@ -145,7 +145,7 @@ class DialogComponent {
             },
             () => {
                 // PAGE FEEDBACK
-                openPage('https://chrome.google.com/webstore/detail/chatgpt-grammar-checker/falmfokjnojgnmammfjkoblodjgfiegl/reviews');
+                openPage('https://chrome.google.com/webstore/detail/ai-essay-writer/blcamfmkmjdbigcliokaebahmolamlfp/reviews');
             }
         );
 

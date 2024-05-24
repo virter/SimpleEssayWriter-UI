@@ -180,7 +180,7 @@ async function init() {
         },
         () => {
             // CHANGE PAGE FEEDBACK
-            openPage('https://chrome.google.com/webstore/detail/grammar-check/hbffkehliekjohgiklfhbeoecbplbhdb/reviews');
+            openPage('https://chrome.google.com/webstore/detail/ai-essay-writer/blcamfmkmjdbigcliokaebahmolamlfp/');
         }
     );
 
