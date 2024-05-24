@@ -2,7 +2,7 @@ class RequestService {
     constructor(userId) {
         this.userId = userId;
 
-        this.apiUrl = 'https://aiwordchecker.online/api/v3/corrections';
+        this.apiUrl = 'https://aiwordchecker.online/api/essay/v1/generate';
         this.userService = new UserService();
     }
 
@@ -11,15 +11,15 @@ class RequestService {
 
         const userEmail = await this.userService.getEmail();
 
-        const store = await chrome.storage.local.get(['language']);
-        const lang = 'language' in store ? store.language : 'en-us';
+        //const store = await chrome.storage.local.get(['language']);
+        //const lang = 'language' in store ? store.language : 'en-us';
 
         const data = {
             ...{
                 rid: rid,
                 v: 1,
                 visitorId: this.userId,
-                lang: lang,
+                email: userEmail
             },
             ... args.data
         };
@@ -45,9 +45,15 @@ class RequestService {
                 return;
             }
 
-            args.callback&&args.callback(response);
+            if (args.callback) {
+                await args.callback(responseBody);
+            }
         } catch (error) {
-            args.fail&&args.fail();
+            console.log(error);
+
+            if (args.fail) {
+                await args.fail();
+            }
         }
     }
 }

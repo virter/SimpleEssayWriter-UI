@@ -21,7 +21,6 @@ class DialogComponent {
         this.copyTipInterval = null;
 
         this.analyticsService = window.gcc.services.analyticsService;
-        this.pusherService = window.gcc.services.pusherService;
 
         this.textCompareService = window.gcc.services.textCompareService;
         this.requestService = window.gcc.services.requestService;
@@ -326,6 +325,11 @@ class DialogComponent {
         this.text += text;
         this.html += this.prepareHTML(text);
 
+        if (duration === 0) {
+            this.resultText.innerHTML = this.html;
+            return new Promise(resolve => { resolve(true); });
+        }
+
         return new Promise(resolve => {
             let i = 0;
 
@@ -349,7 +353,6 @@ class DialogComponent {
         this.resetText();
         this.unsetSendButtonLoading();
         //this.resetHighlightText();
-        this.pusherService.removeAllCallbacks();
     }
 
     toggleHighlight() {
@@ -431,8 +434,12 @@ class DialogComponent {
         const data = [];
 
         fields.forEach((item) => {
-            const value = item.value ? item.value : null;
             const fieldName = item.dataset.field;
+            if (!fieldName) return true;
+
+            let value = item.dataset.value ? item.dataset.value : null;
+            value = value === null && item.value ? item.value : value;
+
             data[fieldName] = value;
         });
 
@@ -443,28 +450,6 @@ class DialogComponent {
         if (reset) this.resetProperties();
 
         let needShowRateLine = true;
-        const responseQueue = new ResponseQueue({
-            item: async (item) => {
-                this.unsetSendButtonLoading();
-
-                await this.appendText(item.text);
-                if (needShowRateLine) needShowRateLine = true;
-            },
-            end: () => {
-                this.unsetSendButtonLoading();
-                //this.showHighlight();
-                if (needShowRateLine) this.showRateLine();
-            },
-            code_no_errors: async () => {
-                this.unsetSendButtonLoading();
-                //this.disableHighlight();
-
-                const message = chrome.i18n.getMessage('no_mistakes_message');
-                await this.appendText(message);
-            },
-        });
-
-        //this.initialText = this.inputText.value;
 
         const data = this.getRequestData();
 
@@ -472,25 +457,17 @@ class DialogComponent {
             data: data,
             before: (rid) => {
                 this.setSendButtonLoading();
-
-                this.pusherService.connect();
-
-                this.pusherService.addCallback(rid, (data) => {
-                    responseQueue.push({
-                        text: data.data,
-                        order: data.ord,
-                        code: data.code,
-                        end: data.end
-                    });
-                });
             },
-            callback: (response) => {
+            callback: async (response) => {
+                this.appendText(response.data, 0);
 
+                if (needShowRateLine) this.showRateLine();
+                this.unsetSendButtonLoading();
             },
             fail: async (errorLabel) => {
                 const text = this.responseService.getErrorText(errorLabel);
                 //this.setError();
-                this.appendText(text);
+                this.appendText(text, 0);
 
                 this.unsetSendButtonLoading();
             }
@@ -1171,7 +1148,7 @@ class DialogTemplate {
                     <div class="sew_row-cell">
                         <div class="sew_label">${chrome.i18n.getMessage('text_language')}</div>
                         <div class="sew_select" data-language_select>
-                            <input type="text" class="sew_select-input" placeholder="${chrome.i18n.getMessage('language')}" data-dropdown_input data-field="language" />
+                            <input type="text" class="sew_select-input" placeholder="${chrome.i18n.getMessage('language')}" data-dropdown_input data-field="lang" />
                             <div class="sew_select-list" data-dropdown_block>
                                 <div class="sew_item-active hidden" data-active_item>
                                     <span data-active_item_label></span>

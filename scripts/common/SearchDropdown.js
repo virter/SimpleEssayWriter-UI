@@ -225,10 +225,12 @@ class SearchDropdown {
     showSelectedItem() {
         if (!this.selected.name) {
             this.input.value = '';
+            this.input.dataset.value = null;
             return;
         }
 
         this.input.value = this.selected.name;
+        this.input.dataset.value = this.selected.value;
     }
 
     unfocusInput() {

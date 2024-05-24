@@ -2,7 +2,7 @@
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
     "default_locale": "en",
-    "version": "1.1.1",
+    "version": "1.1.3",
     "manifest_version": 3,
     "icons": {
         "260": "icon-default.png"
@@ -46,7 +46,6 @@
                 "scripts/vendors/webcomponents-bundle.js",
                 "scripts/vendors/pusher.min.js",
                 "scripts/common/RateBlock.js",
-                "scripts/common/ResponseQueue.js",
                 "scripts/common/SignInButton.js",
                 "scripts/common/WelcomeBlock.js",
                 "scripts/common/SearchDropdown.js",
@@ -55,7 +54,6 @@
                 "scripts/functions/getUuid.js",
                 "scripts/services/BadgeService.js",
                 "scripts/services/EventService.js",
-                "scripts/services/PusherService.js",
                 "scripts/services/RequestService.js",
                 "scripts/services/ResponseService.js",
                 "scripts/services/StateService.js",
