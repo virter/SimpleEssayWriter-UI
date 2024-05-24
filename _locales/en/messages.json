@@ -30,10 +30,10 @@
         "message": "Open editor in a new tab"
     },
     "context_open_dialog_btn": {
-        "message": "Simple Writer"
+        "message": "Open Essay Writer"
     },
     "popup_open_dialog_btn": {
-        "message": "Open Essay Generator"
+        "message": "Open Essay Writer"
     },
     "enable_switch_label": {
         "message": "Enable this plugin"
