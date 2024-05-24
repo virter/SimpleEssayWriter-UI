@@ -142,7 +142,7 @@ class DialogComponent {
         this.rateBlock = new RateBlock(
             this.shadow.querySelector('[data-rate_block]'),
             () => {
-                openPage('https://docs.google.com/forms/d/1NuvA_9sKTNCOeMW0RGK4HoY7qR7m3xckBAK3NbwlOuk');
+                openPage('https://docs.google.com/forms/d/e/1FAIpQLSfOHXmNDwTGK0-5VhoxxlIGvLxs0sw0yDruaK4v4RfSTuax2Q/viewform');
             },
             () => {
                 // PAGE FEEDBACK

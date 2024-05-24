@@ -110,7 +110,7 @@ async function setDefaults() {
 
     await chrome.storage.local.set(options);
 
-    chrome.runtime.setUninstallURL('https://docs.google.com/forms/d/e/1FAIpQLSePxbYdXGHHx9fup2iWEgCSQn9iyeEoQXomZrKRXsVKW5OcUg/viewform');
+    chrome.runtime.setUninstallURL('https://docs.google.com/forms/d/e/1FAIpQLSfOHXmNDwTGK0-5VhoxxlIGvLxs0sw0yDruaK4v4RfSTuax2Q/viewform');
 }
 
 function openPage(url) {

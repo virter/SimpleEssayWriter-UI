@@ -1,12 +1,12 @@
 {
     "appName": {
-        "message": "Simple Essay Writer"
+        "message": "AI Essay Writer"
     },
     "appDesc": {
-        "message": "Simple Essay description"
+        "message": "Simple ChatGPT Essay Writer"
     },
     "extension_modal_title": {
-        "message": "Simple Essay Writer"
+        "message": "AI Essay Writer"
     },
     "unsupported_site_title": {
         "message": "This Website Not Supported by the Extension"
@@ -33,7 +33,7 @@
         "message": "Simple Writer"
     },
     "popup_open_dialog_btn": {
-        "message": "Open Grammar Checker"
+        "message": "Open Essay Generator"
     },
     "enable_switch_label": {
         "message": "Enable this plugin"

@@ -115,7 +115,7 @@ function showModal(type) {
 function initNavButtons() {
     const feedbackBtn = document.querySelector('[data-feedback_open_btn]');
     feedbackBtn.addEventListener('click', () => {
-        openPage('https://docs.google.com/forms/d/e/1FAIpQLSf9yBwMNDfFKz-G4oaonyy3PX8PfZFJq_L889CjItPJgJEWKw/viewform');
+        openPage('https://docs.google.com/forms/d/e/1FAIpQLSfOHXmNDwTGK0-5VhoxxlIGvLxs0sw0yDruaK4v4RfSTuax2Q/viewform');
         //showModal('feedback');
     });
 
@@ -176,7 +176,7 @@ async function init() {
     const rateBlock = new RateBlock(
         document.querySelector('[data-rate_block]'),
         () => {
-            openPage('https://docs.google.com/forms/d/e/1FAIpQLSePxbYdXGHHx9fup2iWEgCSQn9iyeEoQXomZrKRXsVKW5OcUg/viewform');
+            openPage('https://docs.google.com/forms/d/e/1FAIpQLSfOHXmNDwTGK0-5VhoxxlIGvLxs0sw0yDruaK4v4RfSTuax2Q/viewform');
         },
         () => {
             // CHANGE PAGE FEEDBACK
