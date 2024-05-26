@@ -15,7 +15,6 @@
 //post-process:import:./services/TextCompareService.js
 //post-process:import:./services/UserService.js
 
-
 window.gcc = {
     user: {},
     components: {},
@@ -57,6 +56,8 @@ async function load() {
     initMenu();
 
     chrome.runtime.onMessage.addListener(onMessageHandler);
+
+    if (window.location.search === '?simple_essay_writer=1') openDialog('');
 }
 
 function initMenu() {

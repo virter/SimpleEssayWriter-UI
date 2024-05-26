@@ -171,16 +171,16 @@
         "message": "Simple Essay Writer"
     },
     "subject": {
-        "message": "Essay subject"
+        "message": "Essay title"
     },
     "subject_placeholder": {
-        "message": "Subject"
+        "message": "Add a title here"
     },
     "description": {
-        "message": "Description"
+        "message": "Optional instructions for AI"
     },
     "description_placeholder": {
-        "message": "Description"
+        "message": "Add some additional instructions for AI if you need"
     },
     "level": {
         "message": "Level"
@@ -243,10 +243,13 @@
         "message": "Your text"
     },
     "generate_text": {
-        "message": "Generate text"
+        "message": "Generate Essay with ChatGPT"
+    },
+    "send_description": {
+        "message": "Your essay is being generated using ChatGPT, this may take a few minutes, please wait."
     },
     "ai_result": {
-        "message": "AI result"
+        "message": "Generated Essay"
     },
     "like_extension": {
         "message": "Like the extension? Please, support us by rating on Chrome WebStore"

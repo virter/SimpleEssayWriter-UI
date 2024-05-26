@@ -127,17 +127,45 @@ function initNavButtons() {
     });
 }
 
+
+function openDialog() {
+    chrome.tabs.query(
+        { currentWindow: true, active: true },
+        async (list) => {
+            const tab = list[0];
+            await chrome.tabs.sendMessage(tab.id, { action: 'openDialog' });
+        }
+    );
+}
+
+const redirectUrlList = [
+    'chromewebstore.google.com'
+];
+const openDialogRedirectUrl = 'https://wordsuperb.com/home?simple_essay_writer=1';
+
+function smartOpenDialog() {
+    chrome.tabs.query({ currentWindow: true, active: true }, (tabs) => {
+        const url = tabs[0].url;
+        if (!url) {
+            openPage(openDialogRedirectUrl);
+            return;
+        }
+
+        const urlObj = new URL(url);
+        if (redirectUrlList.indexOf(urlObj.host) !== -1) {
+            openPage(openDialogRedirectUrl);
+            return;
+        }
+
+        openDialog();
+    });
+}
+
 function initOpenDialogBtn() {
     const btn = document.querySelector('[data-open_dialog_btn]');
 
     btn.addEventListener('click', () => {
-        chrome.tabs.query(
-            { currentWindow: true, active: true },
-            async (list) => {
-                const tab = list[0];
-                await chrome.tabs.sendMessage(tab.id, { action: 'openDialog' });
-            }
-        );
+        smartOpenDialog();
     });
 }
 
