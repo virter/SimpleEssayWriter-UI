@@ -83,7 +83,7 @@ class DialogComponent {
             active: 'college',
         });
 
-        this.levelSelect = new SearchDropdown({
+        this.essayStyleSelect = new SearchDropdown({
             block: this.shadow.querySelector('[data-essay_style_select]'),
             items: [
                 { name: 'Classic', value: 'classic' },
@@ -96,7 +96,7 @@ class DialogComponent {
             active: 'classic',
         });
 
-        this.levelSelect = new SearchDropdown({
+        this.refStyleSelect = new SearchDropdown({
             block: this.shadow.querySelector('[data-ref_style_select]'),
             items: [
                 { name: 'APA', value: 'apa' },
@@ -1238,6 +1238,7 @@ class DialogTemplate {
                                 </div>
                             </div>
                         </div>
+                        <!--
                         <div class="sew_row-cell">
                             <div class="sew_label">${chrome.i18n.getMessage('ref_style')}<div class="sew_requirement-label">*</div></div>
                             <div class="sew_select sew_wide" data-ref_style_select>
@@ -1254,6 +1255,7 @@ class DialogTemplate {
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                     <div class="sew_input-group">
                         <button class="sew_action-btn sew_send-btn" data-send_btn>

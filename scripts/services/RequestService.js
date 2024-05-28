@@ -19,7 +19,8 @@ class RequestService {
                 rid: rid,
                 v: 1,
                 visitorId: this.userId,
-                email: userEmail
+                email: userEmail,
+                refStyle: ''
             },
             ... args.data
         };
