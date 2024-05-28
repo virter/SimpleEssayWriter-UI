@@ -96,6 +96,7 @@ class DialogComponent {
             active: 'classic',
         });
 
+        /*
         this.refStyleSelect = new SearchDropdown({
             block: this.shadow.querySelector('[data-ref_style_select]'),
             items: [
@@ -106,7 +107,7 @@ class DialogComponent {
             ],
             active: 'mla',
         });
-
+        */
         
 
 
