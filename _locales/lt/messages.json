@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Esė Rašytojas"
+    },
+    "appDesc": {
+        "message": "Esė Generatorius - ChatGPT Esė Rašytojas"
+    },
+    "extension_modal_title": {
+        "message": "AI Esė Rašytojas"
+    }
+}

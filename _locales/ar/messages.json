@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "كاتب المقالات بالذكاء الاصطناعي"
+    },
+    "appDesc": {
+        "message": "مولد المقالات - كاتب المقالات ChatGPT"
+    },
+    "extension_modal_title": {
+        "message": "كاتب المقالات بالذكاء الاصطناعي"
+    }
+}

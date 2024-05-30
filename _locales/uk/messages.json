@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Письменник Есе"
+    },
+    "appDesc": {
+        "message": "Генератор Есе - ChatGPT Письменник Есе"
+    },
+    "extension_modal_title": {
+        "message": "AI Письменник Есе"
+    }
+}

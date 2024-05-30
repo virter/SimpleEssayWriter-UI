@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI প্রবন্ধ লেখক"
+    },
+    "appDesc": {
+        "message": "প্রবন্ধ উৎপাদক - ChatGPT প্রবন্ধ লেখক"
+    },
+    "extension_modal_title": {
+        "message": "AI প্রবন্ধ লেখক"
+    }
+}

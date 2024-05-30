@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Συγγραφέας Δοκιμίων"
+    },
+    "appDesc": {
+        "message": "Γεννήτρια Δοκιμίων - Συγγραφέας Δοκιμίων ChatGPT"
+    },
+    "extension_modal_title": {
+        "message": "AI Συγγραφέας Δοκιμίων"
+    }
+}

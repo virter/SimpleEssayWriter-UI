@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Esszéíró"
+    },
+    "appDesc": {
+        "message": "Esszé Generátor - ChatGPT Esszéíró"
+    },
+    "extension_modal_title": {
+        "message": "AI Esszéíró"
+    }
+}

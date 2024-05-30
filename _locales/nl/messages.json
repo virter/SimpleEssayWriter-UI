@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Essay Schrijver"
+    },
+    "appDesc": {
+        "message": "Essay Generator - ChatGPT Essay Schrijver"
+    },
+    "extension_modal_title": {
+        "message": "AI Essay Schrijver"
+    }
+}

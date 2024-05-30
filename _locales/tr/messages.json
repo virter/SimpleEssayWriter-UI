@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Deneme Yazarı"
+    },
+    "appDesc": {
+        "message": "Deneme Üreteci - ChatGPT Deneme Yazarı"
+    },
+    "extension_modal_title": {
+        "message": "AI Deneme Yazarı"
+    }
+}

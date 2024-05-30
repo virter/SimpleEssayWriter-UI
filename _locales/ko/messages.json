@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI 에세이 작성기"
+    },
+    "appDesc": {
+        "message": "에세이 생성기 - ChatGPT 에세이 작성기"
+    },
+    "extension_modal_title": {
+        "message": "AI 에세이 작성기"
+    }
+}

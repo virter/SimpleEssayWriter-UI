@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Esseekirjutaja"
+    },
+    "appDesc": {
+        "message": "Esseegeneraator - ChatGPT Esseekirjutaja"
+    },
+    "extension_modal_title": {
+        "message": "AI Esseekirjutaja"
+    }
+}

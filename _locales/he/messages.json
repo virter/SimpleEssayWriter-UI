@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "כותב חיבורים AI"
+    },
+    "appDesc": {
+        "message": "מחולל חיבורים - כותב חיבורים ChatGPT"
+    },
+    "extension_modal_title": {
+        "message": "כותב חיבורים AI"
+    }
+}

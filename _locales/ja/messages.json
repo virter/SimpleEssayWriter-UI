@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI エッセイライター"
+    },
+    "appDesc": {
+        "message": "エッセイ生成 - ChatGPT エッセイライター"
+    },
+    "extension_modal_title": {
+        "message": "AI エッセイライター"
+    }
+}

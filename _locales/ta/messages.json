@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI கட்டுரை எழுத்தாளர்"
+    },
+    "appDesc": {
+        "message": "கட்டுரை ஜெனரேட்டர் - ChatGPT கட்டுரை எழுத்தாளர்"
+    },
+    "extension_modal_title": {
+        "message": "AI கட்டுரை எழுத்தாளர்"
+    }
+}

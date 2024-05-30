@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "Scrittore di Saggi AI"
+    },
+    "appDesc": {
+        "message": "Generatore di Saggi - Scrittore di Saggi ChatGPT"
+    },
+    "extension_modal_title": {
+        "message": "Scrittore di Saggi AI"
+    }
+}

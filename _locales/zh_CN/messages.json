@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI 文章写手"
+    },
+    "appDesc": {
+        "message": "文章生成器 - ChatGPT 文章写手"
+    },
+    "extension_modal_title": {
+        "message": "AI 文章写手"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Manunulat ng Sanaysay"
+    },
+    "appDesc": {
+        "message": "Sanaysay Generator - ChatGPT Manunulat ng Sanaysay"
+    },
+    "extension_modal_title": {
+        "message": "AI Manunulat ng Sanaysay"
+    }
+}

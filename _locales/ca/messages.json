@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Redactor d'Assaigs"
+    },
+    "appDesc": {
+        "message": "Generador d'Assaigs - Redactor d'Assaigs ChatGPT"
+    },
+    "extension_modal_title": {
+        "message": "AI Redactor d'Assaigs"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI นักเขียนเรียงความ"
+    },
+    "appDesc": {
+        "message": "ตัวสร้างเรียงความ - ChatGPT นักเขียนเรียงความ"
+    },
+    "extension_modal_title": {
+        "message": "AI นักเขียนเรียงความ"
+    }
+}

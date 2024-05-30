@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Eseju Rakstītājs"
+    },
+    "appDesc": {
+        "message": "Eseju Ģenerators - ChatGPT Eseju Rakstītājs"
+    },
+    "extension_modal_title": {
+        "message": "AI Eseju Rakstītājs"
+    }
+}

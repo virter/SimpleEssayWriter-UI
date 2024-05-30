@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Esseenkirjoittaja"
+    },
+    "appDesc": {
+        "message": "Esseekone - ChatGPT Esseenkirjoittaja"
+    },
+    "extension_modal_title": {
+        "message": "AI Esseenkirjoittaja"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI వ్యాస రచయిత"
+    },
+    "appDesc": {
+        "message": "వ్యాస జనరేటర్ - ChatGPT వ్యాస రచయిత"
+    },
+    "extension_modal_title": {
+        "message": "AI వ్యాస రచయిత"
+    }
+}

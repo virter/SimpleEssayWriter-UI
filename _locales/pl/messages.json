@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "AI Pisarz Esejów"
+    },
+    "appDesc": {
+        "message": "Generator Esejów - ChatGPT Pisarz Esejów"
+    },
+    "extension_modal_title": {
+        "message": "AI Pisarz Esejów"
+    }
+}
