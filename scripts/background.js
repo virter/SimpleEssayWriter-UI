@@ -165,7 +165,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         const analyticsService = new AnalyticsService();
         analyticsService.sendEvent(userId, 'extension_install');
 
-        openPage('https://wordsuperb.com/simple-checker-start');
+        openPage('https://wordsuperb.com/simple-essay-start');
     } else if (details.reason === chrome.runtime.OnInstalledReason.UPDATE) {
         // When extension is updated
     } else if (details.reason === chrome.runtime.OnInstalledReason.CHROME_UPDATE) {
